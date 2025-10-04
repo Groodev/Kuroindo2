@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { X, Home, TrendingUp, Clock, Grid, Bookmark, BookMarked, Settings, User } from 'lucide-react';
+import { X, Home, TrendingUp, Clock, Grid2x2 as Grid, Bookmark, BookMarked, Settings, User } from 'lucide-react';
 import { Theme } from '../theme';
 
 interface SideNavProps {
