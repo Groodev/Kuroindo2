@@ -1,4 +1,9 @@
-const API_BASE = 'https://komik-api-six.vercel.app';
+const API_BASE = (import.meta as any).env?.VITE_API_BASE || '';
+
+// If VITE_API_BASE is not set, warn developer
+if (!API_BASE) {
+  console.warn('VITE_API_BASE is not defined. API requests may fail — set VITE_API_BASE in your Netlify environment variables and rebuild the site.');
+}
 
 export interface Comic {
   title: string;
